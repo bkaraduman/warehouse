@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Warehouse.Common\Warehouse.Common.csproj" />
+    <ProjectReference Include="..\..\Core\Warehouse.Api.Application\Warehouse.Api.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Warehouse.Api.Domain\Warehouse.Api.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
